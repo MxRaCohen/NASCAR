@@ -1,7 +1,7 @@
 COLUMNS
 
-Finish_Place : Finsishing Place, Integer, min: 1, max: Num_of_Contestants
-Start_Position : Starting Position, Integer, min: 1, max: Num_of_Contestants
+Finish_Place : Finsishing Place, Integer, min: 1, max: Num_Racers
+Start_Position : Starting Position, Integer, min: 1, max: Num_Racers
 Num_Racers : Number of Contestants, Integer, min: 14, max: 60
 Car_Num : Number on the Car, String, Non-numeric Descriptive Variable
 Driver : Name of the Driver, String, Non-numeric Descriptive Variable
@@ -17,7 +17,7 @@ Prize_Money : Prize Money Awarded for Finish(?), Integer, min: 1, max: 1589387, 
 Miles_Driven : Number of Miles Driven in Race, Floating Point, min: 0, max: 619.5
 Track_Length : Length of the Track, Floating Point, min: 0.2, max: 4.05
 Miles_Led : Number of Miles the Driver led in this Race, Floating Point, min: 0, max: 588, NOTE: 78.1% Missing Val
-Race_Length_Miles : Length of the Race in Miles, Floating Point, min: 46, max: 619.5
+Race_Length : Length of the Race in Miles, Floating Point, min: 46, max: 619.5
 DOB : Date of Birth of Driver, Date, Format: MM/DD/YYYY, NOTE: 0.1% Missing Val
 Age : Age of Driver on Race Day, Floating Point, min: 17, max: 72.73
 Hall_of_Fame : Represents whether someone has been inducted to the hall of fame, Categorical, number of categories: 2 
@@ -27,7 +27,7 @@ UNITS
 
 'Money' is in USD and is not adjusted for inflation
 'Miles' is in Miles
-'Length' is in Miles
+'Race_Length' is in Miles
 'Age' is in Years
 
 
