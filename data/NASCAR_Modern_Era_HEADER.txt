@@ -6,14 +6,14 @@ Num_of_Contestants : Number of Contestants, Integer, min: 14, max: 60
 Car : Number on the Car (?), Integer, min: 0, max: 321
 Driver : Name of the Driver, String, Non-numric Descriptive Variable (to be treated as categorical(?))
 Make : Make of the Car, String, Categorical Variable, number of Categories: 11 (assuming bui == BUI)
-Pts : ??, Integer, min: -103, max: 195
+Pts : NASCAR awarded points for the race, Integer, min: -103, max: 195
 Laps : Number of Laps Completed, Integer, min: 0, max: 515
 Status : Condition of Car at end of Race (?), String, Categorical Variable, number of Categories: 147
 Track : Name of the Track on wich the Race was Held, String, Categorical Variable, number of Categories: 62
 Season_Year : Which season the race took place, Integer, min:, max: 
 Nth_Race : Which race of the season, Integer, min: , max: 
 Date : Date the Race was Held, Date, Format: MM/DD/YYYY
-LL : ??, Integer, min: 1, max: 500, NOTE: 78.1% Missing Val
+Laps_Led : Number of Laps in a Race Led by Driver, Integer, min: 1, max: 500, NOTE: 78.1% Missing Val
 Money : Prize Money Awarded for Finish(?), Integer, min: 1, max: 1589387, NOTE: 15.2% Missing Val due to lack of official publication of data post 2015(?)
 Miles : Number of Miles Driven in Race, Floating Point, min: 0, max: 619.5
 Length : Length of the Track, Floating Point, min: 0.2, max: 4.05
@@ -21,7 +21,7 @@ M/L : ??, Floating Point, min: 0, max: 588, NOTE: 78.1% Missing Val
 Out : ??, Floating Point, min: 46, max: 619.5
 DOB : Date of Birth of Driver, Date, Format: MM/DD/YYYY, NOTE: 0.1% Missing Val
 Age : Age of Driver on Race Day, Floating Point, min: -37.66, max: 72.73
-* : ??, Categorical(?), number of categories: 1, 
+Hall_of_Fame : Represents whether someone has been added to the hall of fame, Categorical, number of categories: 2 
 
 
 UNITS
@@ -37,14 +37,3 @@ MISC.
 'Make' Categories: ['AMC', 'BUI', 'CHE', 'CHR', 'DOD', 'FOR', 'MER', 'OLD', 'PLY', 'PON', 'TOY']
 'Make' Categories Full: ??
 
-
-Open Data Questions:
-
-- The Data appears to start in 1968 at Macon but was described as starting in 1972. Should the '68-'71 races be discarded as not modern era NASCAR?
-- What are the asterisks in column 'Car' represent e.g. *06 for Castles in '68
-- Is there any difference between "BUI" or "bui" in 'Make'?
-- What does the 'Pts' category represent?
-- What does the 'LL' category represent?
-- What does the second 'Out' column represent? It appears to have something to do with Miles?
-- Someone appears to have been born after their race (they have a negative 'age')?
-- What does the final '*' column represent?
